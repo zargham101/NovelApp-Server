@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center" style="background-image:url('/ServerImages/Register.jpg'); height:500px; width:100%;">
+      
+      <form action="/user/Register" method="POST" enctype="multipart/form-data"  >
+        <div>
+            <h4 class="text-center" style="color:grey;margin-bottom:50px"> Register Page</h4>
+        <input  type="email" name="email"  placeholder="Enter Your Email" class="form-control my-2" > 
+        <input type="text" name="name" placeholder="Enter Your Name" class="form-control my-4">
+        <input type="password" name="password" placeholder="Enter Your Password" class="form-control my-4" >
+        <input type="password" name="confirm" placeholder="Confirm" class="form-control my-4" >
+            <p  style="margin-top:-15px;font-size:13px">Choose Your Profile Picture</p>
+            <input style="margin-top:-15px" type="file" name="Avatar"  >
+            <div class="d-flex my-3 justify-content-between">
+            <input type="submit" class="btn btn-danger"  >
+            <a href="/user/Login" class="nav-link" style="color:white;text-decoration: underline;margin-left:15px">Already Have an Account? Log In</a>
+            </div>
+       
+        
+        </div>
+       
+
+      </form>
+    </div>
+</body>
+</html>
